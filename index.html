@@ -2,120 +2,172 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Boddeda Charan Teja | QA Automation Tester</title>
+<title>Charan Teja | QA Automation Tester</title>
 
 <link rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;}
+
 body{
-    font-family:"Segoe UI",sans-serif;
-    background:#eaeaea;
-    margin:0;
+font-family:Segoe UI, sans-serif;
+background:#e9edf1;
+transition:.3s;
 }
 
-.resume{
-    max-width:900px;
-    margin:40px auto;
-    background:#fff;
-    padding:50px;
-    box-shadow:0 0 15px rgba(0,0,0,0.2);
+/* DARK MODE */
+body.dark{
+background:#0f172a;
+color:#fff;
 }
 
-.header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    border-bottom:3px solid #1f4fd8;
-    padding-bottom:20px;
+body.dark .wrapper,
+body.dark .right{
+background:#020617;
+}
+
+body.dark input,
+body.dark textarea{
+background:#020617;
+color:#fff;
+border:1px solid #555;
+}
+
+/* TOP BUTTONS */
+.top-bar{
+position:fixed;
+top:20px;
+right:20px;
+z-index:999;
+}
+
+.top-bar button{
+padding:10px 14px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin-left:6px;
+background:#2563eb;
+color:#fff;
+}
+
+.top-bar button:hover{opacity:.8}
+
+/* LAYOUT */
+.wrapper{
+max-width:1000px;
+margin:80px auto;
+display:grid;
+grid-template-columns:320px 1fr;
+background:#fff;
+box-shadow:0 0 20px rgba(0,0,0,.2);
+animation:fade 1s ease;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+/* LEFT */
+.left{
+background:#0f172a;
+color:#fff;
+padding:35px;
 }
 
 .profile-pic{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    object-fit:cover;
-    border:4px solid #1f4fd8;
-    margin-bottom:10px;
+width:160px;
+height:160px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #38bdf8;
+display:block;
+margin:auto;
+}
+
+.left h2{
+margin-top:25px;
+border-bottom:2px solid #38bdf8;
+padding-bottom:6px;
+font-size:18px;
+}
+
+.left p,.left li{
+margin-top:8px;
+font-size:14px;
+}
+
+.left ul{list-style:none;padding-left:0;}
+
+.left li:hover{color:#38bdf8}
+
+/* RIGHT */
+.right{
+padding:45px;
 }
 
 .name{
-    font-size:38px;
-    font-weight:bold;
+font-size:40px;
+font-weight:bold;
 }
 
-.title{
-    font-size:18px;
-    color:#1f4fd8;
+.role{
+font-size:18px;
+color:#2563eb;
 }
 
-.contact p{
-    margin:5px 0;
-    font-size:14px;
+.section{margin-top:30px;}
+
+.section h3{
+color:#2563eb;
+border-bottom:2px solid #2563eb;
+padding-bottom:6px;
+margin-bottom:12px;
 }
 
-.section{
-    margin-top:35px;
+.summary{line-height:1.7;}
+
+.tags span{
+background:#2563eb;
+color:#fff;
+padding:7px 14px;
+border-radius:20px;
+margin:6px 6px 0 0;
+display:inline-block;
 }
 
-.section-title{
-    color:#1f4fd8;
-    font-size:20px;
-    border-bottom:2px solid #1f4fd8;
-    display:inline-block;
-    padding-bottom:5px;
-    margin-bottom:15px;
+/* CONTACT FORM */
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:12px;
+max-width:500px;
 }
 
-.summary{
-    line-height:1.7;
+.contact-form input,
+.contact-form textarea{
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
 }
 
-.skills span{
-    display:inline-block;
-    background:#1f4fd8;
-    color:#fff;
-    padding:8px 14px;
-    margin:6px;
-    border-radius:20px;
-    font-size:14px;
+.contact-form button{
+background:#2563eb;
+color:#fff;
+padding:10px;
+border:none;
+border-radius:6px;
+cursor:pointer;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-}
-
-.job-title{
-    font-weight:bold;
-    font-size:16px;
-}
-
-.company{
-    color:#555;
-    margin-bottom:10px;
-}
-
-ul{
-    padding-left:18px;
-}
-
-li{
-    margin-bottom:8px;
-}
-
-.footer{
-    text-align:center;
-    margin-top:40px;
-    color:#777;
-    font-size:12px;
-}
-
-@media(max-width:768px){
-    .grid{grid-template-columns:1fr;}
-    .header{flex-direction:column;align-items:flex-start;}
+/* RESPONSIVE */
+@media(max-width:900px){
+.wrapper{grid-template-columns:1fr;}
 }
 
 </style>
@@ -123,37 +175,68 @@ li{
 
 <body>
 
-<div class="resume">
-
-<!-- HEADER -->
-<div class="header">
-    <div>
-        <img src="profile.JPG" class="profile-pic">
-        <div class="name">BODDEDA CHARAN TEJA</div>
-        <div class="title">QA AUTOMATION TESTER</div>
-    </div>
-
-    <div class="contact">
-        <p><i class="fa fa-phone"></i> +91 9640242339</p>
-        <p><i class="fa fa-envelope"></i> tejacharan317@gmail.com</p>
-        <p><i class="fa fa-location-dot"></i> Gachibowli, Hyderabad</p>
-    </div>
+<!-- TOP BUTTONS -->
+<div class="top-bar">
+<button onclick="toggleTheme()"><i class="fa fa-moon"></i></button>
+<button onclick="window.print()"><i class="fa fa-download"></i> PDF</button>
 </div>
 
-<!-- SUMMARY -->
+<div class="wrapper">
+
+<!-- LEFT -->
+<div class="left">
+
+<img src="profile.JPG" class="profile-pic">
+
+<h2>CONTACT</h2>
+<p><i class="fa fa-phone"></i> +91 9640242339</p>
+<p><i class="fa fa-envelope"></i> tejacharan317@gmail.com</p>
+<p><i class="fa fa-location-dot"></i> Gachibowli, Hyderabad</p>
+
+<h2>SKILLS</h2>
+<ul>
+<li>Selenium</li>
+<li>Playwright</li>
+<li>TestNG</li>
+<li>Appium</li>
+<li>Postman</li>
+<li>Java</li>
+<li>JIRA</li>
+<li>API Testing</li>
+</ul>
+
+<h2>LANGUAGES</h2>
+<ul>
+<li>English – Fluent</li>
+<li>Telugu – Fluent</li>
+<li>Hindi – Basic</li>
+</ul>
+
+<h2>PROFILES</h2>
+<p>LinkedIn: linkedin.com/in/charan-teja-qa</p>
+<p>GitHub: github.com/Charan-95</p>
+
+</div>
+
+<!-- RIGHT -->
+<div class="right">
+
+<div class="name">BODDEDA CHARAN TEJA</div>
+<div class="role">QA Automation Tester</div>
+
 <div class="section">
-<div class="section-title">PROFESSIONAL SUMMARY</div>
+<h3>PROFESSIONAL SUMMARY</h3>
 <p class="summary">
 Software Tester with 4+ years of experience in Manual and Automation Testing.
 Expertise in Selenium, Playwright, Appium, TestNG and API Testing.
-Strong experience in Healthcare domain testing and automation framework development.
+Strong experience in healthcare domain testing and automation framework
+development using Page Object Model.
 </p>
 </div>
 
-<!-- SKILLS -->
 <div class="section">
-<div class="section-title">TECHNICAL SKILLS</div>
-<div class="skills">
+<h3>TECHNICAL SKILLS</h3>
+<div class="tags">
 <span>Selenium</span>
 <span>Playwright</span>
 <span>TestNG</span>
@@ -165,32 +248,20 @@ Strong experience in Healthcare domain testing and automation framework developm
 </div>
 </div>
 
-<!-- EXPERIENCE -->
 <div class="section">
-<div class="section-title">WORK EXPERIENCE</div>
-
-<div class="job-title">Quality Analyst</div>
-<div class="company">Maren Solutions Pvt. Limited | 2022 - Present</div>
-
+<h3>WORK EXPERIENCE</h3>
 <ul>
-<li><b>Product Testing for Healthcare Domain</b></li>
-<li>Performed functional testing on healthcare web and mobile applications.</li>
-<li>Conducted performance, usability and compatibility testing.</li>
-<li>Verified payment processing and data security.</li>
-<li>Reported defects using JIRA.</li>
-
-<li><b>Automation Framework & POM</b></li>
-<li>Designed and implemented automation framework using Page Object Model.</li>
-<li>Developed Selenium & Playwright automated test scripts using Java.</li>
+<li>Designed automation framework using Page Object Model.</li>
+<li>Developed Selenium & Playwright scripts using Java.</li>
 <li>Built data-driven framework using Excel.</li>
-<li>Implemented TestNG for execution and reporting.</li>
+<li>Implemented TestNG for execution & reporting.</li>
 <li>Validated APIs using Postman.</li>
+<li>Reported defects using JIRA.</li>
 </ul>
 </div>
 
-<!-- PROJECTS -->
 <div class="section">
-<div class="section-title">PROJECTS</div>
+<h3>PROJECTS</h3>
 <ul>
 <li>Healthcare Appointment Booking System</li>
 <li>Telemedicine Mobile Application</li>
@@ -198,9 +269,15 @@ Strong experience in Healthcare domain testing and automation framework developm
 </ul>
 </div>
 
-<!-- CERTIFICATIONS -->
 <div class="section">
-<div class="section-title">CERTIFICATIONS</div>
+<h3>EDUCATION</h3>
+<p>B.Tech – Mechanical Engineering (AVEN | JNTUK)</p>
+<p>Intermediate (MPC) – Sai Kulwanth Junior College</p>
+<p>SSC – DAV Public School</p>
+</div>
+
+<div class="section">
+<h3>CERTIFICATIONS</h3>
 <ul>
 <li>Selenium WebDriver with Java</li>
 <li>Playwright Automation</li>
@@ -208,49 +285,38 @@ Strong experience in Healthcare domain testing and automation framework developm
 </ul>
 </div>
 
-<!-- PROFILES -->
 <div class="section">
-<div class="section-title">PROFESSIONAL PROFILES</div>
-<p>
-<b>LinkedIn:</b> https://www.linkedin.com/in/charan-teja-qa <br>
-<b>GitHub:</b> https://github.com/Charan-95
-</p>
-</div>
-
-<!-- EDUCATION & LANGUAGES -->
-<div class="section grid">
-
-<div>
-<div class="section-title">EDUCATION</div>
-<p><b>B.Tech (Mechanical Engineering)</b><br>AVEN | JNTUK</p>
-<p><b>Intermediate (MPC)</b><br>Sai Kulwanth Junior College</p>
-<p><b>SSC</b><br>DAV Public School</p>
-</div>
-
-<div>
-<div class="section-title">LANGUAGES</div>
-<ul>
-<li>English – Fluent</li>
-<li>Telugu – Fluent</li>
-<li>Hindi – Basic</li>
-</ul>
-
-<div class="section-title">SOFT SKILLS</div>
-<ul>
-<li>Analytical Thinking</li>
-<li>Problem Solving</li>
-<li>Communication</li>
-<li>Teamwork</li>
-</ul>
+<h3>CONTACT ME</h3>
+<form class="contact-form" onsubmit="sendMail(event)">
+<input id="name" type="text" placeholder="Your Name" required>
+<input id="email" type="email" placeholder="Your Email" required>
+<textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+<button type="submit">Send Message</button>
+</form>
 </div>
 
 </div>
-
-<div class="footer">
-© 2026 Boddeda Charan Teja
 </div>
 
-</div>
+<script>
+function toggleTheme(){
+document.body.classList.toggle("dark");
+}
+
+function sendMail(e){
+e.preventDefault();
+let name=document.getElementById("name").value;
+let email=document.getElementById("email").value;
+let msg=document.getElementById("message").value;
+
+window.location.href=
+"mailto:tejacharan317@gmail.com"+
+"?subject=Resume Contact"+
+"&body=Name: "+name+
+"%0AEmail: "+email+
+"%0AMessage: "+msg;
+}
+</script>
 
 </body>
 </html>
