@@ -2,192 +2,238 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>B. Charan Teja | Quality Analyst</title>
- 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
- 
+<title>Boddeda Charan Teja | Quality Analyst</title>
+
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+
+body{
+    font-family: "Segoe UI", sans-serif;
+    background:#eaeaea;
+    margin:0;
 }
- 
-body {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: #fff;
-    scroll-behavior: smooth;
+
+.resume{
+    max-width:900px;
+    margin:40px auto;
+    background:#fff;
+    padding:50px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
 }
- 
-section {
-    padding: 80px 10%;
+
+/* HEADER */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:3px solid #1f4fd8;
+    padding-bottom:20px;
 }
- 
-h1, h2 {
-    margin-bottom: 20px;
+
+.name{
+    font-size:38px;
+    font-weight:bold;
 }
- 
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+.title{
+    font-size:18px;
+    color:#1f4fd8;
+    margin-top:5px;
 }
- 
-.hero h1 {
-    font-size: 48px;
-    animation: fadeIn 1.5s ease-in;
+
+.contact p{
+    margin:5px 0;
+    font-size:14px;
 }
- 
-.hero p {
-    font-size: 20px;
-    margin-top: 10px;
-    opacity: 0.8;
+
+/* SECTION */
+
+.section{
+    margin-top:35px;
 }
- 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #00c6ff;
-    color: #000;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: 600;
-    transition: 0.3s;
+
+.section-title{
+    color:#1f4fd8;
+    font-size:20px;
+    margin-bottom:15px;
+    border-bottom:2px solid #1f4fd8;
+    display:inline-block;
+    padding-bottom:5px;
 }
- 
-.btn:hover {
-    background: #fff;
+
+.summary{
+    line-height:1.7;
 }
- 
-.skills .skill {
-    margin-bottom: 15px;
+
+/* SKILLS */
+
+.skills span{
+    display:inline-block;
+    background:#1f4fd8;
+    color:#fff;
+    padding:8px 14px;
+    margin:6px;
+    border-radius:20px;
+    font-size:14px;
 }
- 
-.skill-bar {
-    height: 8px;
-    background: #555;
-    border-radius: 5px;
+
+/* TWO COLUMN */
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
 }
- 
-.skill-fill {
-    height: 8px;
-    background: #00c6ff;
-    border-radius: 5px;
+
+/* EXPERIENCE */
+
+.job-title{
+    font-weight:bold;
+    font-size:16px;
 }
- 
-.project-card {
-    background: rgba(255,255,255,0.1);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    transition: 0.3s;
+
+.company{
+    color:#555;
+    margin-bottom:10px;
 }
- 
-.project-card:hover {
-    transform: translateY(-5px);
-    background: rgba(255,255,255,0.2);
+
+ul{
+    padding-left:18px;
 }
- 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0,0,0,0.3);
+
+li{
+    margin-bottom:8px;
 }
- 
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
+
+/* FOOTER */
+
+.footer{
+    text-align:center;
+    margin-top:40px;
+    color:#777;
+    font-size:12px;
 }
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+    .grid{
+        grid-template-columns:1fr;
+    }
+    .header{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+}
+
 </style>
 </head>
- 
+
 <body>
- 
-<!-- HERO SECTION -->
-<section class="hero">
-    <h1>B. Charan Teja</h1>
-    <p>Quality Analyst | 4+ Years in Automation & Manual Testing</p>
-    <a href="#contact" class="btn">Contact Me</a>
-</section>
- 
-<!-- ABOUT -->
-<section>
-    <h2>About Me</h2>
-    <p>
-        Quality Analyst with 4+ years of experience in automation and manual testing.
-        Strong expertise in Playwright automation framework, Selenium, and API testing.
-        Passionate about delivering high-quality software through efficient testing strategies.
+
+<div class="resume">
+
+<!-- HEADER -->
+<div class="header">
+    <div>
+        <div class="name">BODDEDA CHARAN TEJA</div>
+        <div class="title">QUALITY ANALYST / AUTOMATION TESTER</div>
+    </div>
+
+    <div class="contact">
+        <p><i class="fa fa-phone"></i> +91 9640242339</p>
+        <p><i class="fa fa-envelope"></i> tejacharan317@gmail.com</p>
+        <p><i class="fa fa-location-dot"></i> Gachibowli, Hyderabad</p>
+    </div>
+</div>
+
+<!-- SUMMARY -->
+<div class="section">
+    <div class="section-title">PROFESSIONAL SUMMARY</div>
+    <p class="summary">
+    Software Tester with 3+ years of experience in Manual and Automation Testing.
+    Expertise in Selenium, Playwright, Appium, API Testing and TestNG.
+    Strong experience in Healthcare domain testing with focus on quality, performance,
+    and reliability of applications.
     </p>
-</section>
- 
-<!-- EXPERIENCE -->
-<section>
-    <h2>Work Experience</h2>
-    <h3>Maren Solutions Pvt Ltd</h3>
-    <p><strong>Feb 2022 – Present</strong></p>
-    <ul>
-        <li>Developed automation scripts using Playwright.</li>
-        <li>Performed regression, functional, and smoke testing.</li>
-        <li>Defect tracking using Jira.</li>
-        <li>Worked in Agile/Scrum environment.</li>
-    </ul>
-</section>
- 
+</div>
+
 <!-- SKILLS -->
-<section class="skills">
-    <h2>Technical Skills</h2>
- 
-    <div class="skill">
-        <p>Playwright</p>
-        <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+<div class="section">
+    <div class="section-title">TECHNICAL SKILLS</div>
+    <div class="skills">
+        <span>Selenium</span>
+        <span>Playwright</span>
+        <span>TestNG</span>
+        <span>Appium</span>
+        <span>Postman</span>
+        <span>Java</span>
+        <span>JIRA</span>
+        <span>API Testing</span>
     </div>
- 
-    <div class="skill">
-        <p>Selenium</p>
-        <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
-    </div>
- 
-    <div class="skill">
-        <p>Appium</p>
-        <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
-    </div>
- 
-    <div class="skill">
-        <p>API Testing</p>
-        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
-    </div>
-</section>
- 
+</div>
+
+<!-- EXPERIENCE -->
+<div class="section">
+    <div class="section-title">WORK EXPERIENCE</div>
+
+    <div class="job-title">Quality Analyst</div>
+    <div class="company">Maren Solutions Pvt. Limited | 2022 - Present</div>
+
+    <ul>
+        <li>Performed functional and regression testing for healthcare web and mobile applications.</li>
+        <li>Automated regression suite using Selenium and Playwright.</li>
+        <li>Validated API responses using Postman.</li>
+        <li>Logged defects in JIRA and collaborated with developers.</li>
+        <li>Performed cross-browser and cross-device testing.</li>
+    </ul>
+</div>
+
 <!-- PROJECTS -->
-<section>
-    <h2>Projects</h2>
- 
-    <div class="project-card">
-        <h3>Hybrid Mobile Automation Framework</h3>
-        <p>Developed mobile automation POC using Appium for hybrid applications.</p>
+<div class="section">
+    <div class="section-title">PROJECTS</div>
+
+    <ul>
+        <li><b>Healthcare Appointment Booking System</b> – Automated patient registration, appointment booking, and payment flows.</li>
+        <li><b>Mobile Telemedicine App</b> – Tested video consultation, prescription, and reports modules.</li>
+        <li><b>API Automation Framework</b> – Built reusable API test suite using Postman and Java.</li>
+    </ul>
+</div>
+
+<!-- EDUCATION -->
+<div class="section grid">
+
+    <div>
+        <div class="section-title">EDUCATION</div>
+        <p><b>B.Tech – Mechanical Engineering</b><br>
+        AVEN | JNTUK (2013–2017)</p>
+
+        <p><b>Intermediate (MPC)</b><br>
+        Sai Kulwanth Junior College (2011–2013)</p>
+
+        <p><b>SSC</b><br>
+        DAV Public School (2010–2011)</p>
     </div>
- 
-    <div class="project-card">
-        <h3>Web Automation Framework</h3>
-        <p>Built Playwright-based automation framework with reusable components and reporting.</p>
+
+    <div>
+        <div class="section-title">LANGUAGES</div>
+        <ul>
+            <li>English – Fluent</li>
+            <li>Telugu – Fluent</li>
+            <li>Hindi – Basic</li>
+        </ul>
     </div>
- 
-</section>
- 
-<!-- CONTACT -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: tejacharan317@gmail.com</p>
-    <p>Phone: 9640242339</p>
-</section>
- 
-<footer>
-    © 2026 B. Charan Teja | Quality Analyst
-</footer>
- 
-</body
- 
+
+</div>
+
+<div class="footer">
+© 2026 Boddeda Charan Teja | Resume
+</div>
+
+</div>
+
+</body>
+</html>
