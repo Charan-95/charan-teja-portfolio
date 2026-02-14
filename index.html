@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Boddeda Charan Teja | Quality Analyst</title>
+<title>Boddeda Charan Teja | QA Automation Tester</title>
 
 <link rel="stylesheet"
  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -10,7 +10,7 @@
 <style>
 
 body{
-    font-family: "Segoe UI", sans-serif;
+    font-family:"Segoe UI",sans-serif;
     background:#eaeaea;
     margin:0;
 }
@@ -23,14 +23,21 @@ body{
     box-shadow:0 0 15px rgba(0,0,0,0.2);
 }
 
-/* HEADER */
-
 .header{
     display:flex;
     justify-content:space-between;
     align-items:center;
     border-bottom:3px solid #1f4fd8;
     padding-bottom:20px;
+}
+
+.profile-pic{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #1f4fd8;
+    margin-bottom:10px;
 }
 
 .name{
@@ -41,15 +48,12 @@ body{
 .title{
     font-size:18px;
     color:#1f4fd8;
-    margin-top:5px;
 }
 
 .contact p{
     margin:5px 0;
     font-size:14px;
 }
-
-/* SECTION */
 
 .section{
     margin-top:35px;
@@ -58,17 +62,15 @@ body{
 .section-title{
     color:#1f4fd8;
     font-size:20px;
-    margin-bottom:15px;
     border-bottom:2px solid #1f4fd8;
     display:inline-block;
     padding-bottom:5px;
+    margin-bottom:15px;
 }
 
 .summary{
     line-height:1.7;
 }
-
-/* SKILLS */
 
 .skills span{
     display:inline-block;
@@ -80,15 +82,11 @@ body{
     font-size:14px;
 }
 
-/* TWO COLUMN */
-
 .grid{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:40px;
 }
-
-/* EXPERIENCE */
 
 .job-title{
     font-weight:bold;
@@ -108,8 +106,6 @@ li{
     margin-bottom:8px;
 }
 
-/* FOOTER */
-
 .footer{
     text-align:center;
     margin-top:40px;
@@ -117,16 +113,9 @@ li{
     font-size:12px;
 }
 
-/* RESPONSIVE */
-
 @media(max-width:768px){
-    .grid{
-        grid-template-columns:1fr;
-    }
-    .header{
-        flex-direction:column;
-        align-items:flex-start;
-    }
+    .grid{grid-template-columns:1fr;}
+    .header{flex-direction:column;align-items:flex-start;}
 }
 
 </style>
@@ -139,8 +128,9 @@ li{
 <!-- HEADER -->
 <div class="header">
     <div>
+        <img src="profile.jpg" class="profile-pic">
         <div class="name">BODDEDA CHARAN TEJA</div>
-        <div class="title">QUALITY ANALYST / AUTOMATION TESTER</div>
+        <div class="title">QA AUTOMATION TESTER</div>
     </div>
 
     <div class="contact">
@@ -152,85 +142,112 @@ li{
 
 <!-- SUMMARY -->
 <div class="section">
-    <div class="section-title">PROFESSIONAL SUMMARY</div>
-    <p class="summary">
-    Software Tester with 3+ years of experience in Manual and Automation Testing.
-    Expertise in Selenium, Playwright, Appium, API Testing and TestNG.
-    Strong experience in Healthcare domain testing with focus on quality, performance,
-    and reliability of applications.
-    </p>
+<div class="section-title">PROFESSIONAL SUMMARY</div>
+<p class="summary">
+Software Tester with 4+ years of experience in Manual and Automation Testing.
+Expertise in Selenium, Playwright, Appium, TestNG and API Testing.
+Strong experience in Healthcare domain testing and automation framework development.
+</p>
 </div>
 
 <!-- SKILLS -->
 <div class="section">
-    <div class="section-title">TECHNICAL SKILLS</div>
-    <div class="skills">
-        <span>Selenium</span>
-        <span>Playwright</span>
-        <span>TestNG</span>
-        <span>Appium</span>
-        <span>Postman</span>
-        <span>Java</span>
-        <span>JIRA</span>
-        <span>API Testing</span>
-    </div>
+<div class="section-title">TECHNICAL SKILLS</div>
+<div class="skills">
+<span>Selenium</span>
+<span>Playwright</span>
+<span>TestNG</span>
+<span>Appium</span>
+<span>Postman</span>
+<span>Java</span>
+<span>JIRA</span>
+<span>API Testing</span>
+</div>
 </div>
 
 <!-- EXPERIENCE -->
 <div class="section">
-    <div class="section-title">WORK EXPERIENCE</div>
+<div class="section-title">WORK EXPERIENCE</div>
 
-    <div class="job-title">Quality Analyst</div>
-    <div class="company">Maren Solutions Pvt. Limited | 2022 - Present</div>
+<div class="job-title">Quality Analyst</div>
+<div class="company">Maren Solutions Pvt. Limited | 2022 - Present</div>
 
-    <ul>
-        <li>Performed functional and regression testing for healthcare web and mobile applications.</li>
-        <li>Automated regression suite using Selenium and Playwright.</li>
-        <li>Validated API responses using Postman.</li>
-        <li>Logged defects in JIRA and collaborated with developers.</li>
-        <li>Performed cross-browser and cross-device testing.</li>
-    </ul>
+<ul>
+<li><b>Product Testing for Healthcare Domain</b></li>
+<li>Performed functional testing on healthcare web and mobile applications.</li>
+<li>Conducted performance, usability and compatibility testing.</li>
+<li>Verified payment processing and data security.</li>
+<li>Reported defects using JIRA.</li>
+
+<li><b>Automation Framework & POM</b></li>
+<li>Designed and implemented automation framework using Page Object Model.</li>
+<li>Developed Selenium & Playwright automated test scripts using Java.</li>
+<li>Built data-driven framework using Excel.</li>
+<li>Implemented TestNG for execution and reporting.</li>
+<li>Validated APIs using Postman.</li>
+</ul>
 </div>
 
 <!-- PROJECTS -->
 <div class="section">
-    <div class="section-title">PROJECTS</div>
-
-    <ul>
-        <li><b>Healthcare Appointment Booking System</b> – Automated patient registration, appointment booking, and payment flows.</li>
-        <li><b>Mobile Telemedicine App</b> – Tested video consultation, prescription, and reports modules.</li>
-        <li><b>API Automation Framework</b> – Built reusable API test suite using Postman and Java.</li>
-    </ul>
+<div class="section-title">PROJECTS</div>
+<ul>
+<li>Healthcare Appointment Booking System</li>
+<li>Telemedicine Mobile Application</li>
+<li>API Automation Framework</li>
+</ul>
 </div>
 
-<!-- EDUCATION -->
+<!-- CERTIFICATIONS -->
+<div class="section">
+<div class="section-title">CERTIFICATIONS</div>
+<ul>
+<li>Selenium WebDriver with Java</li>
+<li>Playwright Automation</li>
+<li>API Testing using Postman</li>
+</ul>
+</div>
+
+<!-- PROFILES -->
+<div class="section">
+<div class="section-title">PROFESSIONAL PROFILES</div>
+<p>
+<b>LinkedIn:</b> https://www.linkedin.com/in/charan-teja-qa <br>
+<b>GitHub:</b> https://github.com/Charan-95
+</p>
+</div>
+
+<!-- EDUCATION & LANGUAGES -->
 <div class="section grid">
 
-    <div>
-        <div class="section-title">EDUCATION</div>
-        <p><b>B.Tech – Mechanical Engineering</b><br>
-        AVEN | JNTUK (2013–2017)</p>
+<div>
+<div class="section-title">EDUCATION</div>
+<p><b>B.Tech (Mechanical Engineering)</b><br>AVEN | JNTUK</p>
+<p><b>Intermediate (MPC)</b><br>Sai Kulwanth Junior College</p>
+<p><b>SSC</b><br>DAV Public School</p>
+</div>
 
-        <p><b>Intermediate (MPC)</b><br>
-        Sai Kulwanth Junior College (2011–2013)</p>
+<div>
+<div class="section-title">LANGUAGES</div>
+<ul>
+<li>English – Fluent</li>
+<li>Telugu – Fluent</li>
+<li>Hindi – Basic</li>
+</ul>
 
-        <p><b>SSC</b><br>
-        DAV Public School (2010–2011)</p>
-    </div>
-
-    <div>
-        <div class="section-title">LANGUAGES</div>
-        <ul>
-            <li>English – Fluent</li>
-            <li>Telugu – Fluent</li>
-            <li>Hindi – Basic</li>
-        </ul>
-    </div>
+<div class="section-title">SOFT SKILLS</div>
+<ul>
+<li>Analytical Thinking</li>
+<li>Problem Solving</li>
+<li>Communication</li>
+<li>Teamwork</li>
+</ul>
+</div>
 
 </div>
 
 <div class="footer">
-© 2026 Boddeda Charan Teja | Resume
+© 2026 Boddeda Charan Teja
 </div>
 
 </div>
